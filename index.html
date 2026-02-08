@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marice & Me | Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Marice &amp; Me</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="menu-bars"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/countdown.html">Countdown</a>
+      <a href="pages/love-notes.html">Love Notes</a>
+      <a href="pages/memory-lane.html">Memory Lane</a>
+      <a href="pages/cat-games.html">Cat Games</a>
+      <a href="pages/gvf.html">Greta Van Fleet</a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Deployed with love, always.</p>
+      <h1>Hey Love, this is your cozy corner while I'm at sea.</h1>
+      <p class="lead">
+        A warm little space filled with countdowns, cat adventures, memories, and daily love notes.
+        Built just for you, Marice.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="pages/countdown.html">View Countdown</a>
+        <a class="button ghost" href="pages/love-notes.html">Get a Love Note</a>
+      </div>
+    </section>
+
+    <section class="countdown-card" data-return-date="2025-12-31T00:00:00">
+      <div class="countdown-header">
+        <h2>Countdown to Homecoming</h2>
+        <span class="tag">Live</span>
+      </div>
+      <div class="countdown-grid">
+        <div class="countdown-block">
+          <span class="countdown-value" data-countdown-days>--</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-block">
+          <span class="countdown-value" data-countdown-hours>--</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-block">
+          <span class="countdown-value" data-countdown-minutes>--</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" data-progress-bar></div>
+      </div>
+      <p class="progress-caption">Every day closer to a giant hug.</p>
+    </section>
+
+    <section class="feature-grid">
+      <article class="feature-card">
+        <h3>Daily Love Note Generator</h3>
+        <p>Five moods, one tap, and a note to brighten your day.</p>
+        <a class="text-link" href="pages/love-notes.html">Open Love Notes →</a>
+      </article>
+      <article class="feature-card">
+        <h3>Memory Lane</h3>
+        <p>Swipe through our favorite moments and stories together.</p>
+        <a class="text-link" href="pages/memory-lane.html">Visit Memory Lane →</a>
+      </article>
+      <article class="feature-card">
+        <h3>Cat Mini-Games</h3>
+        <p>Three playful cat quests starring Alice, Beatrice, and Olive.</p>
+        <a class="text-link" href="pages/cat-games.html">Play Cat Games →</a>
+      </article>
+      <article class="feature-card">
+        <h3>Greta Van Fleet Fan Page</h3>
+        <p>Tour dates, trivia, and our favorite GVF memories.</p>
+        <a class="text-link" href="pages/gvf.html">Go to GVF Page →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with all my love for you, Marice.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
