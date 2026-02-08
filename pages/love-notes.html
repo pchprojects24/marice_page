@@ -26,12 +26,40 @@
 
   <main>
     <section class="hero">
-      <p class="eyebrow">Coming soon</p>
-      <h1>This page is getting a warm upgrade next.</h1>
-      <p class="lead">We'll add the full experience here once we build each feature together.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="../index.html">Back to Home</a>
+      <p class="eyebrow">Daily love notes</p>
+      <h1>Your love letter delivery system.</h1>
+      <p class="lead">
+        Pick a mood and let me send you a little reminder of how much I adore you.
+      </p>
+    </section>
+
+    <section class="love-notes">
+      <div class="love-notes-panel">
+        <h2>Choose a mood</h2>
+        <div class="love-notes-buttons" role="group" aria-label="Love note categories">
+          <button class="pill-button" type="button" data-category="funny">Funny</button>
+          <button class="pill-button" type="button" data-category="sweet">Sweet</button>
+          <button class="pill-button" type="button" data-category="encouraging">Encouraging</button>
+          <button class="pill-button" type="button" data-category="flirty">Flirty</button>
+          <button class="pill-button" type="button" data-category="random">Random</button>
+        </div>
       </div>
+
+      <div class="note-card" aria-live="polite">
+        <p class="note-category" data-note-category>Pick a category to begin.</p>
+        <p class="note-text" data-note-text>Your note will appear here.</p>
+        <button class="button primary" type="button" data-save-note disabled>Save to Favorites</button>
+      </div>
+    </section>
+
+    <section class="favorites">
+      <div class="favorites-header">
+        <h2>View Favorites</h2>
+        <p class="favorites-subtitle">All the notes you want to keep close.</p>
+      </div>
+      <ul class="favorites-list" data-favorites-list>
+        <li class="favorites-empty">No favorites yet. Save a note to see it here.</li>
+      </ul>
     </section>
   </main>
 

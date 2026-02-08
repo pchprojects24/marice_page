@@ -270,6 +270,116 @@ main {
   color: var(--plum);
 }
 
+.love-notes {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.love-notes-panel,
+.note-card,
+.favorites {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.love-notes-panel h2 {
+  color: var(--plum);
+  margin-bottom: 0.75rem;
+}
+
+.love-notes-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.pill-button {
+  border: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--plum);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pill-button.active,
+.pill-button:hover {
+  background: var(--rose);
+  color: #fff;
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+}
+
+.note-card {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.note-category {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--rose);
+  font-weight: 700;
+}
+
+.note-text {
+  font-size: 1.25rem;
+  color: var(--ink);
+  min-height: 4.5rem;
+}
+
+.note-text.fade-in {
+  animation: fadeInNote 0.6s ease;
+}
+
+.favorites {
+  display: grid;
+  gap: 1rem;
+}
+
+.favorites-header h2 {
+  color: var(--plum);
+}
+
+.favorites-subtitle {
+  color: var(--plum);
+  font-size: 0.95rem;
+}
+
+.favorites-list {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.favorite-item {
+  background: var(--cream);
+  padding: 0.85rem 1rem;
+  border-radius: 16px;
+  font-size: 1rem;
+}
+
+.favorites-empty {
+  color: var(--plum);
+  opacity: 0.7;
+}
+
+@keyframes fadeInNote {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (min-width: 720px) {
   .site-header {
     padding: 1.5rem 3rem;
