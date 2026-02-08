@@ -291,3 +291,779 @@ if (loveNotesSection) {
 
   updateFavorites();
 }
+
+const triviaQuestions = {
+  easy: [
+    {
+      question: "Where is Greta Van Fleet from?",
+      answers: ["Detroit, Michigan", "Frankenmuth, Michigan", "Nashville, Tennessee", "Los Angeles, California"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "What year was Greta Van Fleet formed?",
+      answers: ["2010", "2012", "2015", "2017"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "Which classic rock band is Greta Van Fleet most commonly compared to?",
+      answers: ["The Rolling Stones", "Led Zeppelin", "Pink Floyd", "The Who"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "How many members are in Greta Van Fleet?",
+      answers: ["Three", "Four", "Five", "Six"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "What genre of music does Greta Van Fleet play?",
+      answers: ["Country", "Pop", "Rock", "Hip Hop"],
+      correct: 2,
+      category: "Band Basics"
+    },
+    {
+      question: "What was Greta Van Fleet's breakthrough hit single?",
+      answers: ["Safari Song", "Highway Tune", "Heat Above", "Age of Man"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What is the name of their debut studio album?",
+      answers: ["Black Smoke Rising", "From the Fires", "Anthem of the Peaceful Army", "The Battle at Garden's Gate"],
+      correct: 2,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Which album features the song 'Heat Above'?",
+      answers: ["Anthem of the Peaceful Army", "From the Fires", "The Battle at Garden's Gate", "Starcatcher"],
+      correct: 2,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What year was their debut EP 'Black Smoke Rising' released?",
+      answers: ["2015", "2017", "2018", "2019"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Which is the name of their 2023 album?",
+      answers: ["Dreams in Gold", "Highway Dreams", "Starcatcher", "Garden's Gate"],
+      correct: 2,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Has Greta Van Fleet won a Grammy Award?",
+      answers: ["Yes", "No", "They've been nominated but never won", "They've won five"],
+      correct: 0,
+      category: "Awards & Achievements"
+    },
+    {
+      question: "Approximately how many concert tickets has Greta Van Fleet sold worldwide?",
+      answers: ["100,000", "500,000", "Over 1 million", "Over 5 million"],
+      correct: 2,
+      category: "Awards & Achievements"
+    },
+    {
+      question: "What was the name of their 2022-2023 tour?",
+      answers: ["Highway Tour", "Dreams in Gold", "Starcatcher Tour", "Peaceful Army Tour"],
+      correct: 1,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "What was the name of their 2023-2024 tour?",
+      answers: ["Dreams in Gold", "Battle Tour", "Starcatcher World Tour", "Highway World Tour"],
+      correct: 2,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "Greta Van Fleet is known for incorporating what into their live shows?",
+      answers: ["Holograms", "Pyrotechnics", "Costume changes", "Dance routines"],
+      correct: 1,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "Who is the lead vocalist of Greta Van Fleet?",
+      answers: ["Jake Kiszka", "Josh Kiszka", "Sam Kiszka", "Danny Wagner"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "What is the first track on 'From the Fires' EP?",
+      answers: ["Highway Tune", "Safari Song", "Edge of Darkness", "Talk on the Street"],
+      correct: 0,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Which song features the lyric 'Can you hear that thunder roar'?",
+      answers: ["Safari Song", "Highway Tune", "When the Curtain Falls", "You're the One"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What instrument does Josh Kiszka primarily play?",
+      answers: ["Guitar", "Drums", "He's the vocalist, no instrument", "Keyboards"],
+      correct: 2,
+      category: "Band Basics"
+    },
+    {
+      question: "Which streaming platform features Greta Van Fleet prominently?",
+      answers: ["All of them", "Spotify only", "Apple Music only", "YouTube only"],
+      correct: 0,
+      category: "Band Basics"
+    },
+    {
+      question: "What year did 'Anthem of the Peaceful Army' release?",
+      answers: ["2017", "2018", "2019", "2020"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Which song was featured on the TV show 'Shameless'?",
+      answers: ["Safari Song", "Highway Tune", "When the Curtain Falls", "You're the One"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What color is most associated with Greta Van Fleet's visual aesthetic?",
+      answers: ["Blue and purple", "Red and orange", "Gold and earth tones", "Black and white"],
+      correct: 2,
+      category: "Band Basics"
+    },
+    {
+      question: "Greta Van Fleet's music is often described as what era of rock?",
+      answers: ["Modern rock", "Classic rock revival", "Punk rock", "Emo rock"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "Which of these festivals has Greta Van Fleet performed at?",
+      answers: ["Coachella", "Lollapalooza", "Both", "Neither"],
+      correct: 2,
+      category: "Tours & Live Shows"
+    }
+  ],
+  medium: [
+    {
+      question: "Jake and Josh Kiszka are:",
+      answers: ["Cousins", "Twin brothers", "Not related", "Father and son"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "What is Danny Wagner's role in the band?",
+      answers: ["Lead guitar", "Bass", "Drums", "Keyboards"],
+      correct: 2,
+      category: "Band Basics"
+    },
+    {
+      question: "Which Kiszka brother is the youngest?",
+      answers: ["Josh", "Jake", "Sam", "They're all the same age"],
+      correct: 2,
+      category: "Band Basics"
+    },
+    {
+      question: "What instrument does Jake Kiszka play?",
+      answers: ["Drums", "Lead guitar", "Bass", "Keyboards"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "Sam Kiszka plays which two instruments primarily?",
+      answers: ["Guitar and drums", "Bass and keyboards", "Guitar and keyboards", "Drums and bass"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "Which album won the Grammy for Best Rock Album in 2019?",
+      answers: ["Anthem of the Peaceful Army", "From the Fires", "Black Smoke Rising", "The Battle at Garden's Gate"],
+      correct: 1,
+      category: "Awards & Achievements"
+    },
+    {
+      question: "What year was 'The Battle at Garden's Gate' released?",
+      answers: ["2019", "2020", "2021", "2022"],
+      correct: 2,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What is the title of the acoustic song from Starcatcher?",
+      answers: ["Sacred the Thread", "Light My Love", "Meeting the Master", "The Archer"],
+      correct: 0,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Which EP became their first to chart on Billboard 200?",
+      answers: ["Black Smoke Rising", "From the Fires", "Anthem Sessions", "Highway Sessions"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What song features the lyric 'Can you see the mist of what is coming?'",
+      answers: ["Highway Tune", "Age of Machine", "Safari Song", "The Weight of Dreams"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "In what year did Greta Van Fleet win their Grammy?",
+      answers: ["2017", "2018", "2019", "2020"],
+      correct: 2,
+      category: "Awards & Achievements"
+    },
+    {
+      question: "How many Grammy nominations did they receive in 2019?",
+      answers: ["Two", "Three", "Four", "Five"],
+      correct: 2,
+      category: "Awards & Achievements"
+    },
+    {
+      question: "What late-night show did Greta Van Fleet perform on in 2017?",
+      answers: ["The Tonight Show", "Jimmy Kimmel Live!", "Saturday Night Live", "Late Night with Seth Meyers"],
+      correct: 2,
+      category: "Awards & Achievements"
+    },
+    {
+      question: "Which chart did 'Highway Tune' top for four consecutive weeks?",
+      answers: ["Billboard Hot 100", "Billboard Mainstream Rock", "Alternative Songs", "Top 40"],
+      correct: 1,
+      category: "Awards & Achievements"
+    },
+    {
+      question: "In 2024, which festival did Greta Van Fleet headline in Prince Edward Island?",
+      answers: ["Cavendish Beach Music Festival", "Sommo Festival", "PEI Rock Fest", "Maritime Music Fest"],
+      correct: 1,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "What venue did Greta Van Fleet play in Niagara Falls, Ontario in August 2024?",
+      answers: ["FirstOntario Centre", "Scotiabank Centre", "OLG Stage at Fallsview Casino", "Budweiser Stage"],
+      correct: 2,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "Which band did NOT open for Greta Van Fleet on the Dreams in Gold Tour?",
+      answers: ["Houndmouth", "Rival Sons", "Robert Finley", "The Black Keys"],
+      correct: 3,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "What health issue forced Josh Kiszka to postpone shows in October 2022?",
+      answers: ["Broken leg", "Ruptured eardrum", "Vocal cord strain", "Pneumonia"],
+      correct: 1,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "Which song opens 'The Battle at Garden's Gate'?",
+      answers: ["Heat Above", "My Way, Soon", "Built by Nations", "Age of Machine"],
+      correct: 0,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What is the longest song on 'Anthem of the Peaceful Army'?",
+      answers: ["Lover, Leaver (Taker, Believer)", "Age of Man", "The New Day", "Anthem"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Which music video features the band in a desert setting?",
+      answers: ["Highway Tune", "When the Curtain Falls", "Safari Song", "You're the One"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What year did Greta Van Fleet sign with Lava Records?",
+      answers: ["2015", "2016", "2017", "2018"],
+      correct: 2,
+      category: "Awards & Achievements"
+    },
+    {
+      question: "Which song features prominent organ/keyboard work?",
+      answers: ["Highway Tune", "Safari Song", "Light My Love", "Age of Man"],
+      correct: 3,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What is the closing track on 'Starcatcher'?",
+      answers: ["The Archer", "Farewell for Now", "The Falling Sky", "Runway Blues"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Which brother is the tallest?",
+      answers: ["Josh", "Jake", "Sam", "They're all the same height"],
+      correct: 2,
+      category: "Band Basics"
+    },
+    {
+      question: "What amplifier brand does Jake Kiszka famously use?",
+      answers: ["Marshall", "Fender", "Vox", "Orange"],
+      correct: 0,
+      category: "Band Basics"
+    },
+    {
+      question: "Which song was released as the lead single from 'The Battle at Garden's Gate'?",
+      answers: ["Age of Machine", "My Way, Soon", "Heat Above", "Broken Bells"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What is the runtime of 'The Weight of Dreams'?",
+      answers: ["About 5 minutes", "About 7 minutes", "About 9 minutes", "About 11 minutes"],
+      correct: 2,
+      category: "Albums & Songs"
+    }
+  ],
+  hard: [
+    {
+      question: "What was the name of the band before they became Greta Van Fleet?",
+      answers: ["The Kiszka Brothers", "They never had a different name", "Highway Tune", "Frankenmuth Four"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "Where did the band name 'Greta Van Fleet' come from?",
+      answers: ["A family member's name", "An elderly resident of their hometown", "A character in a book", "They made it up randomly"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "In what year did Danny Wagner officially join the band?",
+      answers: ["2010", "2013", "2015", "2017"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "How many tracks are on 'The Battle at Garden's Gate'?",
+      answers: ["10", "11", "12", "14"],
+      correct: 2,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What was the first single released from Starcatcher?",
+      answers: ["The Falling Sky", "Meeting the Master", "Sacred the Thread", "Frozen Light"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Which song is the longest on 'The Battle at Garden's Gate'?",
+      answers: ["Age of Man", "Built by Nations", "The Weight of Dreams", "Broken Bells"],
+      correct: 2,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What album features the song 'Lover, Leaver'?",
+      answers: ["From the Fires", "Anthem of the Peaceful Army", "Black Smoke Rising", "The Battle at Garden's Gate"],
+      correct: 0,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Who produced the album 'Starcatcher'?",
+      answers: ["Al Shux", "Marlon Young", "Dave Cobb", "Greg Kurstin"],
+      correct: 2,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What is the opening track on 'Anthem of the Peaceful Army'?",
+      answers: ["When the Curtain Falls", "Age of Man", "The Cold Wind", "Watching Over"],
+      correct: 1,
+      category: "Albums & Songs"
+    },
+    {
+      question: "How many continents have Greta Van Fleet performed on?",
+      answers: ["Three", "Four", "Five", "Six"],
+      correct: 2,
+      category: "Awards & Achievements"
+    },
+    {
+      question: "What year did 'Highway Tune' top the rock charts?",
+      answers: ["2016", "2017", "2018", "2019"],
+      correct: 1,
+      category: "Awards & Achievements"
+    },
+    {
+      question: "Which record label signed Greta Van Fleet in March 2017?",
+      answers: ["Republic Records", "Warner Records", "Lava Records", "Columbia Records"],
+      correct: 2,
+      category: "Awards & Achievements"
+    },
+    {
+      question: "In what city did Josh Kiszka rupture his eardrum during a 2022 concert?",
+      answers: ["Portland, Maine", "Bangor, Maine", "Boston, Massachusetts", "Providence, Rhode Island"],
+      correct: 1,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "Which band opened for Greta Van Fleet in Niagara Falls, August 2024?",
+      answers: ["The Beaches", "Half Moon Run", "Crown Lands", "Danko Jones"],
+      correct: 2,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "What month/year did the Dreams in Gold Tour originally launch?",
+      answers: ["January 2022", "March 2022", "September 2022", "November 2022"],
+      correct: 1,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "What studio did Greta Van Fleet record 'Starcatcher' in?",
+      answers: ["Abbey Road Studios", "Electric Lady Studios", "RCA Studios", "Sunset Sound"],
+      correct: 2,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Which song features the lyric 'Thunder in my heart, rain in my eyes'?",
+      answers: ["Broken Bells", "Trip the Light Fantastic", "Stardust Chords", "Light My Love"],
+      correct: 3,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What was the B-side to the 'Highway Tune' single?",
+      answers: ["Safari Song", "Edge of Darkness", "Cloud Train", "Flower Power"],
+      correct: 2,
+      category: "Albums & Songs"
+    },
+    {
+      question: "How many songs are on the 'From the Fires' EP?",
+      answers: ["6", "7", "8", "9"],
+      correct: 2,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What guitar does Jake Kiszka primarily play?",
+      answers: ["Fender Stratocaster", "Gibson Les Paul", "Gibson SG", "PRS Custom"],
+      correct: 1,
+      category: "Band Basics"
+    },
+    {
+      question: "Which song did NOT appear on 'Black Smoke Rising' EP?",
+      answers: ["Highway Tune", "Edge of Darkness", "Flower Power", "Talk on the Street"],
+      correct: 3,
+      category: "Albums & Songs"
+    },
+    {
+      question: "What year was Jake Kiszka diagnosed with pneumonia, causing tour postponements?",
+      answers: ["2021", "2022", "2023", "2024"],
+      correct: 1,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "Which song features Danny Wagner's drum solo in live performances?",
+      answers: ["Safari Song", "Highway Tune", "Motown Funk (drum solo)", "The Weight of Dreams"],
+      correct: 2,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "What is the subtitle/tagline of 'The Battle at Garden's Gate' album?",
+      answers: ["A New Beginning", "The Journey Continues", "There is no subtitle", "Rise Above"],
+      correct: 2,
+      category: "Albums & Songs"
+    },
+    {
+      question: "Which festival did Greta Van Fleet headline in 2019 that was their largest crowd to date at the time?",
+      answers: ["Coachella", "Lollapalooza", "Rock Werchter", "Pinkpop"],
+      correct: 2,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "What is Sam Kiszka's signature bass?",
+      answers: ["Fender Precision Bass", "Music Man StingRay", "Yamaha BB", "Gibson Thunderbird"],
+      correct: 2,
+      category: "Band Basics"
+    },
+    {
+      question: "Which song was performed acoustically on 'The Battle at Garden's Gate' tour?",
+      answers: ["Light My Love", "Age of Man", "Flower Power", "Broken Bells"],
+      correct: 0,
+      category: "Tours & Live Shows"
+    },
+    {
+      question: "What year did Greta Van Fleet perform at the Rock and Roll Hall of Fame induction ceremony?",
+      answers: ["2017", "2018", "2019", "They haven't performed there"],
+      correct: 3,
+      category: "Awards & Achievements"
+    }
+  ],
+  personal: [
+    {
+      question: "How many times have Chad and Marice seen Greta Van Fleet live?",
+      answers: ["Once", "Twice", "Three times", "Four times"],
+      correct: 2,
+      category: "Personal"
+    },
+    {
+      question: "In what year did Chad and Marice see GVF for the first time?",
+      answers: ["2020", "2021", "2022", "2023"],
+      correct: 2,
+      category: "Personal"
+    },
+    {
+      question: "Which concert was at a music festival?",
+      answers: ["Bangor, Maine", "Niagara Falls, Ontario", "Sommo Festival, PEI", "None of them"],
+      correct: 2,
+      category: "Personal"
+    },
+    {
+      question: "Where did Chad and Marice see their first Greta Van Fleet concert?",
+      answers: ["Halifax, Nova Scotia", "Bangor, Maine", "Niagara Falls, Ontario", "Charlottetown, PEI"],
+      correct: 1,
+      category: "Personal"
+    },
+    {
+      question: "How many GVF concerts did Chad and Marice attend in 2024?",
+      answers: ["One", "Two", "Three", "Four"],
+      correct: 1,
+      category: "Personal"
+    },
+    {
+      question: "What tour were they seeing at the Niagara Falls concert?",
+      answers: ["Dreams in Gold Tour", "Battle at Garden's Gate Tour", "Starcatcher World Tour", "Anthem Tour"],
+      correct: 2,
+      category: "Personal"
+    },
+    {
+      question: "What date did Chad and Marice see GVF at Sommo Festival?",
+      answers: ["September 13, 2024", "September 14, 2024", "September 15, 2024", "September 20, 2024"],
+      correct: 1,
+      category: "Personal"
+    },
+    {
+      question: "Which concert did they see first chronologically?",
+      answers: ["Niagara Falls", "Sommo Festival PEI", "Bangor, Maine", "They saw all three at once"],
+      correct: 2,
+      category: "Personal"
+    },
+    {
+      question: "What venue did they see GVF at in Bangor?",
+      answers: ["Bangor Auditorium", "Cross Insurance Center", "Darling's Waterfront Pavilion", "Maine Savings Amphitheater"],
+      correct: 1,
+      category: "Personal"
+    },
+    {
+      question: "What special event happened during the Bangor concert?",
+      answers: ["It was their anniversary", "Josh Kiszka ruptured his eardrum during the show", "The band played an extra-long set", "They met the band backstage"],
+      correct: 1,
+      category: "Personal"
+    }
+  ]
+};
+
+const triviaSection = document.querySelector(".gvf-trivia");
+
+if (triviaSection) {
+  const setupCard = triviaSection.querySelector("[data-trivia-setup]");
+  const quizCard = triviaSection.querySelector("[data-trivia-quiz]");
+  const resultsCard = triviaSection.querySelector("[data-trivia-results]");
+  const difficultyButtons = triviaSection.querySelectorAll("[data-difficulty]");
+  const countButtons = triviaSection.querySelectorAll("[data-count]");
+  const startButton = triviaSection.querySelector("[data-start-trivia]");
+  const progressEl = triviaSection.querySelector("[data-trivia-progress]");
+  const scoreEl = triviaSection.querySelector("[data-trivia-score]");
+  const categoryEl = triviaSection.querySelector("[data-trivia-category]");
+  const questionEl = triviaSection.querySelector("[data-trivia-question]");
+  const answersEl = triviaSection.querySelector("[data-trivia-answers]");
+  const feedbackEl = triviaSection.querySelector("[data-trivia-feedback]");
+  const nextButton = triviaSection.querySelector("[data-next-question]");
+  const scorelineEl = triviaSection.querySelector("[data-trivia-scoreline]");
+  const messageEl = triviaSection.querySelector("[data-trivia-message]");
+  const playAgainButton = triviaSection.querySelector("[data-play-again]");
+  const shareButton = triviaSection.querySelector("[data-share-score]");
+
+  let selectedDifficulty = null;
+  let selectedCount = 10;
+  let questions = [];
+  let currentIndex = 0;
+  let score = 0;
+
+  const shuffle = (items) => {
+    const copy = [...items];
+    for (let i = copy.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  };
+
+  const updateSetupButtonStates = (buttons, activeValue) => {
+    buttons.forEach((button) => {
+      button.classList.toggle("active", button.dataset[activeValue.key] === activeValue.value);
+    });
+  };
+
+  const updateProgress = () => {
+    if (progressEl) {
+      progressEl.textContent = `Question ${currentIndex + 1} of ${questions.length}`;
+    }
+    if (scoreEl) {
+      scoreEl.textContent = `Score: ${score}`;
+    }
+  };
+
+  const renderQuestion = () => {
+    const current = questions[currentIndex];
+    if (!current) {
+      return;
+    }
+    if (categoryEl) {
+      categoryEl.textContent = current.category;
+    }
+    if (questionEl) {
+      questionEl.textContent = current.question;
+    }
+    if (feedbackEl) {
+      feedbackEl.textContent = "";
+    }
+    if (nextButton) {
+      nextButton.disabled = true;
+    }
+    if (answersEl) {
+      answersEl.innerHTML = "";
+      current.answers.forEach((answer, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "answer-button";
+        button.textContent = `${String.fromCharCode(65 + index)}. ${answer}`;
+        button.addEventListener("click", () => handleAnswer(button, index));
+        answersEl.appendChild(button);
+      });
+    }
+    updateProgress();
+  };
+
+  const handleAnswer = (button, index) => {
+    const current = questions[currentIndex];
+    if (!current || !answersEl) {
+      return;
+    }
+    const buttons = answersEl.querySelectorAll(".answer-button");
+    buttons.forEach((btn) => (btn.disabled = true));
+    const isCorrect = index === current.correct;
+    if (isCorrect) {
+      score += 1;
+      button.classList.add("correct");
+      if (feedbackEl) {
+        feedbackEl.textContent = "Correct! 🎸";
+      }
+    } else {
+      button.classList.add("incorrect");
+      const correctButton = buttons[current.correct];
+      if (correctButton) {
+        correctButton.classList.add("correct");
+      }
+      if (feedbackEl) {
+        feedbackEl.textContent = "Not quite, but keep rocking! 🎵";
+      }
+    }
+    if (nextButton) {
+      nextButton.disabled = false;
+    }
+    updateProgress();
+  };
+
+  const showResults = () => {
+    if (quizCard) {
+      quizCard.classList.add("hidden");
+    }
+    if (resultsCard) {
+      resultsCard.classList.remove("hidden");
+    }
+    const percentage = questions.length ? Math.round((score / questions.length) * 100) : 0;
+    if (scorelineEl) {
+      scorelineEl.textContent = `Score: ${score}/${questions.length} (${percentage}%)`;
+    }
+    if (messageEl) {
+      if (percentage >= 90) {
+        messageEl.textContent = "Ultimate GVF Superfan! 🎸";
+      } else if (percentage >= 70) {
+        messageEl.textContent = "Solid GVF Knowledge! 🎵";
+      } else if (percentage >= 50) {
+        messageEl.textContent = "Getting There! Keep Listening! 🎶";
+      } else {
+        messageEl.textContent = "Time for a GVF Deep Dive! 🎧";
+      }
+    }
+  };
+
+  const startTrivia = () => {
+    if (!selectedDifficulty) {
+      return;
+    }
+    const pool = triviaQuestions[selectedDifficulty] || [];
+    const shuffled = shuffle(pool);
+    questions = shuffled.slice(0, Math.min(selectedCount, shuffled.length));
+    currentIndex = 0;
+    score = 0;
+    if (setupCard) {
+      setupCard.classList.add("hidden");
+    }
+    if (resultsCard) {
+      resultsCard.classList.add("hidden");
+    }
+    if (quizCard) {
+      quizCard.classList.remove("hidden");
+    }
+    renderQuestion();
+  };
+
+  const nextQuestion = () => {
+    currentIndex += 1;
+    if (currentIndex >= questions.length) {
+      showResults();
+    } else {
+      renderQuestion();
+    }
+  };
+
+  difficultyButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      selectedDifficulty = button.dataset.difficulty;
+      updateSetupButtonStates(difficultyButtons, { key: "difficulty", value: selectedDifficulty });
+    });
+  });
+
+  countButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      selectedCount = Number(button.dataset.count) || 10;
+      updateSetupButtonStates(countButtons, { key: "count", value: String(selectedCount) });
+    });
+  });
+
+  if (startButton) {
+    startButton.addEventListener("click", startTrivia);
+  }
+
+  if (nextButton) {
+    nextButton.addEventListener("click", nextQuestion);
+  }
+
+  if (playAgainButton) {
+    playAgainButton.addEventListener("click", () => {
+      if (resultsCard) {
+        resultsCard.classList.add("hidden");
+      }
+      if (setupCard) {
+        setupCard.classList.remove("hidden");
+      }
+    });
+  }
+
+  if (shareButton) {
+    shareButton.addEventListener("click", async () => {
+      const percentage = questions.length ? Math.round((score / questions.length) * 100) : 0;
+      const message = `I scored ${score}/${questions.length} (${percentage}%) on the GVF trivia!`;
+      if (navigator.share) {
+        await navigator.share({ text: message });
+      } else {
+        navigator.clipboard.writeText(message);
+        if (feedbackEl) {
+          feedbackEl.textContent = "Score copied to clipboard!";
+        }
+      }
+    });
+  }
+
+  if (countButtons.length > 0) {
+    countButtons[0].classList.add("active");
+  }
+}

@@ -26,11 +26,55 @@
 
   <main>
     <section class="hero">
-      <p class="eyebrow">Coming soon</p>
-      <h1>This page is getting a warm upgrade next.</h1>
-      <p class="lead">We'll add the full experience here once we build each feature together.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="../index.html">Back to Home</a>
+      <p class="eyebrow">Greta Van Fleet</p>
+      <h1>GVF trivia, tour vibes, and all our favorite memories.</h1>
+      <p class="lead">Warm up your fan knowledge with a quick trivia game made just for us.</p>
+    </section>
+
+    <section class="gvf-trivia">
+      <div class="trivia-card" data-trivia-setup>
+        <h2>GVF Trivia Challenge</h2>
+        <p class="lead">Pick a difficulty and how many questions you want to play.</p>
+        <div class="trivia-options">
+          <div class="trivia-group">
+            <p class="trivia-label">Difficulty</p>
+            <div class="trivia-buttons" role="group" aria-label="Select difficulty">
+              <button class="pill-button" type="button" data-difficulty="easy">Easy</button>
+              <button class="pill-button" type="button" data-difficulty="medium">Medium</button>
+              <button class="pill-button" type="button" data-difficulty="hard">Hard</button>
+            </div>
+          </div>
+          <div class="trivia-group">
+            <p class="trivia-label">Question count</p>
+            <div class="trivia-buttons" role="group" aria-label="Select question count">
+              <button class="pill-button" type="button" data-count="10">10 Questions</button>
+              <button class="pill-button" type="button" data-count="20">20 Questions</button>
+            </div>
+          </div>
+        </div>
+        <button class="button primary" type="button" data-start-trivia>Start Trivia</button>
+      </div>
+
+      <div class="trivia-card hidden" data-trivia-quiz>
+        <div class="trivia-progress">
+          <span data-trivia-progress>Question 1 of 10</span>
+          <span class="trivia-score" data-trivia-score>Score: 0</span>
+        </div>
+        <p class="trivia-category" data-trivia-category>Band Basics</p>
+        <h3 class="trivia-question" data-trivia-question>Question goes here</h3>
+        <div class="trivia-answers" data-trivia-answers></div>
+        <p class="trivia-feedback" data-trivia-feedback></p>
+        <button class="button primary" type="button" data-next-question disabled>Next Question</button>
+      </div>
+
+      <div class="trivia-card hidden" data-trivia-results>
+        <h2>Your Results</h2>
+        <p class="trivia-scoreline" data-trivia-scoreline>Score: 0/10</p>
+        <p class="trivia-message" data-trivia-message>Great job!</p>
+        <div class="hero-actions">
+          <button class="button primary" type="button" data-play-again>Play Again</button>
+          <button class="button ghost" type="button" data-share-score>Share Score</button>
+        </div>
       </div>
     </section>
   </main>
