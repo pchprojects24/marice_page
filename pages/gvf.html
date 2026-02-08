@@ -6,6 +6,7 @@
   <title>Marice &amp; Me | Greta Van Fleet</title>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header class="site-header">
@@ -25,13 +26,28 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero gvf-hero" id="gvf-top">
       <p class="eyebrow">Greta Van Fleet</p>
-      <h1>GVF trivia, tour vibes, and all our favorite memories.</h1>
-      <p class="lead">Warm up your fan knowledge with a quick trivia game made just for us.</p>
+      <h1>Celebrating my wife's favorite band — the one and only Greta Van Fleet.</h1>
+      <p class="lead">
+        Explore our concert memories, test your GVF knowledge, and stay up to date with the band!
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#gvf-trivia">Trivia Game</a>
+        <a class="button ghost" href="#gvf-tour-dates">Tour Dates</a>
+        <a class="button ghost" href="#gvf-links">Links &amp; Resources</a>
+        <a class="button ghost" href="#gvf-memories">Our GVF Memories</a>
+      </div>
     </section>
 
-    <section class="gvf-trivia">
+    <nav class="gvf-subnav" aria-label="GVF section navigation">
+      <a href="#gvf-trivia">Trivia Game</a>
+      <a href="#gvf-tour-dates">Tour Dates</a>
+      <a href="#gvf-links">Links &amp; Resources</a>
+      <a href="#gvf-memories">Our GVF Memories</a>
+    </nav>
+
+    <section class="gvf-trivia" id="gvf-trivia">
       <div class="trivia-card" data-trivia-setup>
         <h2>GVF Trivia Challenge</h2>
         <p class="lead">Pick a difficulty and how many questions you want to play.</p>
@@ -77,6 +93,127 @@
         </div>
       </div>
     </section>
+
+    <section class="gvf-tour" id="gvf-tour-dates">
+      <div class="section-header">
+        <h2>Tour Dates</h2>
+        <p>Catch the latest shows with the Bandsintown widget below.</p>
+      </div>
+      <div class="tour-widget">
+        <a class="bit-widget-initializer"
+           data-artist-name="Greta Van Fleet"
+           data-display-local-dates="false"
+           data-display-past-dates="false"
+           data-auto-style="false"
+           data-text-color="#FFFFFF"
+           data-link-color="#F4A127"
+           data-background-color="rgba(0,0,0,0)"
+           data-display-limit="15"
+           data-display-start-time="false"
+           data-link-text-color="#FFFFFF"
+           data-display-lineup="false"
+           data-display-play-my-city="false"
+           data-separator-color="rgba(124,124,124,0.25)">
+        </a>
+        <p class="fallback-link">
+          If the widget doesn’t load, view tour dates directly on
+          <a href="https://www.bandsintown.com/a/11942822-greta-van-fleet" target="_blank" rel="noopener noreferrer">
+            Bandsintown
+          </a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="gvf-links" id="gvf-links">
+      <div class="section-header">
+        <h2>Links &amp; Resources</h2>
+        <p>All the official stops and streaming homes in one place.</p>
+      </div>
+      <div class="links-grid">
+        <article class="links-card">
+          <h3>Official Links</h3>
+          <ul>
+            <li><a href="https://gretavanfleet.com/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe"></i> Official Website</a></li>
+            <li><a href="https://www.instagram.com/gretavanfleet/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://twitter.com/gretavanfleet" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i> Twitter / X</a></li>
+            <li><a href="https://www.facebook.com/GretaVanFleet" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.youtube.com/@GretaVanFleet" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+            <li><a href="https://www.tiktok.com/@gretavanfleet" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+          </ul>
+        </article>
+        <article class="links-card">
+          <h3>Streaming</h3>
+          <ul>
+            <li><a href="https://music.youtube.com/channel/UC9Wc2F7faQ8nB1Sre5G6yLQ" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> YouTube Music</a></li>
+            <li><a href="https://open.spotify.com/artist/4NpFxQe2UvRCAjto3JqlSl" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-spotify"></i> Spotify</a></li>
+            <li><a href="https://music.apple.com/us/artist/greta-van-fleet/905803121" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-apple"></i> Apple Music</a></li>
+          </ul>
+        </article>
+        <article class="links-card">
+          <h3>Latest News</h3>
+          <ul>
+            <li><a href="https://gretavanfleet.com/news/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-newspaper"></i> Official News</a></li>
+            <li><a href="https://gretavanfleet.com/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-bullhorn"></i> Announcements &amp; Updates</a></li>
+          </ul>
+        </article>
+        <article class="links-card">
+          <h3>YouTube Playlist</h3>
+          <div class="playlist-placeholder">
+            <p>Playlist embed coming soon. (We’ll add video IDs later.)</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gvf-memories" id="gvf-memories">
+      <div class="section-header">
+        <h2>Our GVF Memories</h2>
+        <p>Three unforgettable shows, one very happy heart.</p>
+      </div>
+      <div class="memories-timeline">
+        <article class="memory-card">
+          <div class="memory-photo">Photo placeholder</div>
+          <div class="memory-content">
+            <span class="memory-tag">Dreams in Gold Tour</span>
+            <h3>Bangor, Maine — October 8, 2022</h3>
+            <p class="memory-venue">Cross Insurance Center</p>
+            <p>
+              Our first Greta Van Fleet concert together at the Cross Insurance Center in Bangor, Maine. This was the
+              Dreams in Gold Tour, and it was unforgettable - though for unexpected reasons. During this show, Josh
+              Kiszka ruptured his eardrum mid-performance, which led to the postponement of several tour dates. We were
+              there to witness rock and roll history, even if we didn't know it at the time!
+            </p>
+          </div>
+        </article>
+        <article class="memory-card">
+          <div class="memory-photo">Photo placeholder</div>
+          <div class="memory-content">
+            <span class="memory-tag">Starcatcher World Tour</span>
+            <h3>Niagara Falls, Ontario — August 4, 2024</h3>
+            <p class="memory-venue">OLG Stage at Fallsview Casino</p>
+            <p>
+              An intimate show at the OLG Stage at Fallsview Casino during their Starcatcher World Tour. With only about
+              400 GA tickets sold, this was a special experience - close to the stage and feeling every note. Crown
+              Lands opened, and the venue's acoustics made every song resonate. This was summer magic.
+            </p>
+          </div>
+        </article>
+        <article class="memory-card">
+          <div class="memory-photo">Photo placeholder</div>
+          <div class="memory-content">
+            <span class="memory-tag">Sommo Festival 2024</span>
+            <h3>Cavendish, PEI — September 14, 2024</h3>
+            <p class="memory-venue">Sommo Festival</p>
+            <p>
+              Greta Van Fleet closed out Sommo Festival 2024 in Cavendish, Prince Edward Island. With over 16,000 fans in
+              attendance, this was the biggest crowd we'd experienced at a GVF show. The energy was electric, the
+              pyrotechnics were incredible, and watching them headline a festival in the Maritimes was a perfect way to
+              end our summer of concerts.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -84,5 +221,6 @@
   </footer>
 
   <script src="../js/main.js"></script>
+  <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
 </body>
 </html>
