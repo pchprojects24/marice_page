@@ -987,6 +987,10 @@ if (triviaSection) {
 
   const startTrivia = () => {
     if (!selectedDifficulty) {
+      if (startButton) {
+        startButton.textContent = "Please select a difficulty first!";
+        setTimeout(() => { startButton.textContent = "Start Trivia"; }, 2000);
+      }
       return;
     }
     const pool = triviaQuestions[selectedDifficulty] || [];
@@ -1052,13 +1056,16 @@ if (triviaSection) {
     shareButton.addEventListener("click", async () => {
       const percentage = questions.length ? Math.round((score / questions.length) * 100) : 0;
       const message = `I scored ${score}/${questions.length} (${percentage}%) on the GVF trivia!`;
-      if (navigator.share) {
-        await navigator.share({ text: message });
-      } else {
-        navigator.clipboard.writeText(message);
-        if (feedbackEl) {
-          feedbackEl.textContent = "Score copied to clipboard!";
+      try {
+        if (navigator.share) {
+          await navigator.share({ text: message });
+        } else {
+          await navigator.clipboard.writeText(message);
+          shareButton.textContent = "Copied!";
+          setTimeout(() => { shareButton.textContent = "Share Score"; }, 2000);
         }
+      } catch {
+        // User cancelled share dialog or clipboard access denied
       }
     });
   }
